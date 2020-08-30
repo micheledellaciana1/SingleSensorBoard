@@ -37,7 +37,7 @@ public class HeaterStabilityListener implements PropertyChangeListener {
     private boolean readyToAcquire(int NPoints) {
         if (TemperatureIsStable(_heater.getTemperature(), NPoints))
             return true;
-        return true;
+        return false;
     }
 
     private boolean TemperatureIsStable(AbstractList<Point2D> temperatures, int NPoints) {

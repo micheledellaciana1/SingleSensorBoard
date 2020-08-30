@@ -66,7 +66,7 @@ public class IVCharacteristic implements PropertyChangeListener {
 		if (evt.getPropertyName().equals("VoltAmpStability"))
 			_VoltAmpIsStable = (boolean) evt.getNewValue();
 
-		if (_flagON && _VoltAmpIsStable)
+		if ((_flagON && _VoltAmpIsStable))
 			try {
 				if (_flagChangeVoltage) {
 					_Commands.SetVoltageFall(_VPATH.get(_MarkPlaceVPATH));

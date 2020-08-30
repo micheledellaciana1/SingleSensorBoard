@@ -43,7 +43,7 @@ public class VoltAmpStabilityListener implements PropertyChangeListener {
             if (ValueIsStable(_voltAmpMeter.getVoltage(), NPoints))
                 if (ValueIsStable(_voltAmpMeter.getCurrent(), NPoints))
                     return true;
-        return true;
+        return false;
     }
 
     private boolean ValueIsStable(AbstractList<Point2D> values, int NPoints) {

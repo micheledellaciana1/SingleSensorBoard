@@ -341,7 +341,6 @@ public class MenuEditorSingleSensorBoard extends MenuEditorChartFrame {
 
 		JMenu menu = new JMenu("IV-Characteristic");
 
-		// Add feedbackOnOff
 		final JCheckBoxMenuItem checkbox = new JCheckBoxMenuItem();
 		final AbstractAction action = new AbstractAction("ON") {
 			@Override
